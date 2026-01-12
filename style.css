@@ -1,5 +1,10 @@
 body {
-  background-color: lightgoldenrodyellow;
+  background-image: url("minionek.jpg");
+  background-size: cover;      
+  background-repeat: no-repeat; 
+  background-position: center;  
+  height: 100vh;
+  margin: 0;
 }
 
 h1 {
