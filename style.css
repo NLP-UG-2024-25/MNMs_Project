@@ -10,9 +10,24 @@ body {
 h1 {
   color: darkblue;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px; 
 }
-
+@media (min-width: 600px) {
+  h1 {
+    font-size: 80px; 
+  }
+  p {
+    font-size: 40px;
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
 p {
   font-family: verdana;
-  font-size: 20px;
+  font-size: 30px;
 }
