@@ -14,7 +14,6 @@
     </div>
     <div class="translator">
         <p>Translate your text into fantasy language here!</p>
-        <textarea id="inputText" rows="10" cols="50" placeholder="Enter text to translate..."></textarea>
         <p>
             <label for="SelectLanguage">Select language:</label>
             <select name="language" id="language">
@@ -24,6 +23,8 @@
                 <option value="pirate">Pirate speak (?)</option>
                 </select>
         </p> 
+        <textarea id="inputText" rows="10" cols="50" placeholder="Enter text to translate..."></textarea>
+        <textarea id="outputText" rows="10" cols="50" placeholder="Translation will appear here..." readonly></textarea>
         <p>
             <button>Translate!</button>
         </p>
