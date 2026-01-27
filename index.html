@@ -16,7 +16,7 @@
         <p>Translate your text into fantasy language here!</p>
         <p>
             <label for="SelectLanguage">Select language:</label>
-            <select name="language" id="language">
+            <select name="language" id="language" onchange="changeTheme(this.value)">
                 <option value="">---Please choose an option---</option>
                 <option value="minion">Minion Language</option>
                 <option value="gameofthrones">High Valyrian</option>
