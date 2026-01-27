@@ -76,7 +76,7 @@ p {
 
 
 body.valyrian-theme {
-    background-image: url("piraci.png");
+    background-image: url("got.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,7 +84,7 @@ body.valyrian-theme {
 }
 
 body.pirate-theme {
-    background-image: url("got.png");
+    background-image: url("piraci.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
