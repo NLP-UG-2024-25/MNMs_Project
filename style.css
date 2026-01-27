@@ -73,3 +73,21 @@ p {
     margin: 2rem auto;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+
+
+body.valyrian-theme {
+    background-image: url("piraci.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.pirate-theme {
+    background-image: url("got.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
