@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Chewy';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/chewy/v18/uK_94ruUb-k-wn52KjI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 body {
   background-image: url("minionek.jpg");
   background-size: cover;      
@@ -5,11 +14,12 @@ body {
   background-position: center;  
   height: 100vh;
   margin: 0;
+  cursor: url('banana.png'), auto;
 }
 
 h1 {
   color: darkblue;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Chewy;
   font-size: 60px; 
   text-align: center;
 }
@@ -40,7 +50,7 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    background:  #F8DE3C;
+    background: rgba(248, 222, 60, 0.5);
     border-radius: 16px;
     padding: 2rem;
     max-width: 600px;
