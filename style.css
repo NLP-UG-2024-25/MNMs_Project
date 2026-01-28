@@ -27,7 +27,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;  
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
  
 }
@@ -175,4 +175,64 @@ body.pirate-theme button {
     color: #f38830;
     -webkit-text-stroke: 1.5px #000000;
     font-size: 40px;
+}
+
+@media (max-width: 599px) {
+
+  body {
+    background-attachment: scroll; /* mobile friendly */
+  }
+
+  h1 {
+    font-size: 36px;
+    -webkit-text-stroke: 1px #361332;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  label,
+  select,
+  textarea,
+  button {
+    font-size: 18px;
+  }
+
+  .container {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .translator {
+    padding: 1.2rem;
+    margin: 1rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 599px) {
+
+  body.pirate-theme h1 {
+    font-size: 42px;
+  }
+
+  body.pirate-theme p {
+    font-size: 22px;
+  }
+
+  body.pirate-theme label,
+  body.pirate-theme select,
+  body.pirate-theme textarea,
+  body.pirate-theme button {
+    font-size: 20px;
+  }
+
+  body.minion-theme h1 {
+    font-size: 38px;
+  }
+
+  body.valyrian-theme h1 {
+    font-size: 40px;
+  }
 }
