@@ -218,14 +218,14 @@ body.pirate-theme button {
   }
 
   body.pirate-theme p {
-    font-size: 22px;
+    font-size: 30px;
   }
 
   body.pirate-theme label,
   body.pirate-theme select,
   body.pirate-theme textarea,
   body.pirate-theme button {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   body.minion-theme h1 {
