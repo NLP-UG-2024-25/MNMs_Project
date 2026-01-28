@@ -96,6 +96,9 @@ body.minion-theme {
   .translator {
     background: rgba(248, 222, 60, 0.5);
   }
+  * {
+    cursor: url('banana.png'), auto;
+  }
 }
 
 body.valyrian-theme {
