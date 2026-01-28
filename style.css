@@ -126,6 +126,7 @@ body.pirate-theme {
 body.minion-theme h1 {
     font-family: 'Chewy', cursive;
     color: darkblue;
+        -webkit-text-stroke: 1.5px darkblue;
 }
 
 body.minion-theme p,
