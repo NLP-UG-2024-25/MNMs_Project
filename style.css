@@ -180,7 +180,7 @@ body.pirate-theme button {
 @media (max-width: 599px) {
 
   body {
-    background-attachment: scroll; /* mobile friendly */
+    background-attachment: scroll;
   }
 
   h1 {
