@@ -1,5 +1,7 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap');
 @font-face {
   font-family: 'Chewy';
   font-style: normal;
@@ -16,7 +18,10 @@
   src: url(https://fonts.gstatic.com/s/fingerpaint/v21/0QInMXVJ-o-oRn_7dron8YW-9JzT.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+
 body {
+  background-image: url("fantasy.jpg");
   background-size: cover;      
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,16 +29,30 @@ body {
   background-position: center;  
   height: 100vh;
   margin: 0;
-}
- * {
-  cursor: url('banana.png'), auto;
+ 
 }
 
 h1 {
-  color: darkblue;
-  font-family: Chewy;
+  color: rgb(116, 29, 121);
+      -webkit-text-stroke: 1.5px #361332;
+    text-stroke: 1.5px #361332;
+  font-family: Unkempt;
   font-size: 60px; 
   text-align: center;
+
+}
+p {
+  font-family: Unkempt;
+  font-size: 20px;
+  color: darkblue;
+}
+label,
+select,
+textarea,
+button {
+  font-family: Unkempt;
+  font-size: 30px;
+  color: darkblue;
 }
 
 @media (min-width: 600px) {
@@ -55,18 +74,13 @@ h1 {
   text-align: center;
   height: 30%;
 }
-p {
-  font-family: Finger Paint;
-  font-size: 45px;
-  color: darkblue;
-}
 
 .translator {
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
-    background: rgba(248, 222, 60, 0.5);
+    background: rgba(184, 94, 198, 0.5);
     border-radius: 16px;
     padding: 2rem;
     max-width: 600px;
@@ -80,6 +94,9 @@ body.minion-theme {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  .translator {
+    background: rgba(248, 222, 60, 0.5);
+  }
 }
 
 body.valyrian-theme {
@@ -88,6 +105,9 @@ body.valyrian-theme {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    .translator {
+    background: rgba(59, 63, 105, 0.5);
+  }
 }
 
 body.pirate-theme {
@@ -96,31 +116,14 @@ body.pirate-theme {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
+    .translator {
+    background: rgba(85, 67, 63, 0.5);
+  }
 }
 
-@font-face {
-  font-family: 'Cinzel';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/cinzel/v24/8vIU7ww63mVu7gtL8W76FQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: 'Pirata One';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/pirataone/v21/I_urMpiDvgLdLh0fAtofhiGOqU.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
 body.minion-theme h1 {
     font-family: 'Chewy', cursive;
-    color: #FF0000;
-    -webkit-text-stroke: 2px #000000;
-    text-stroke: 2px #000000;
+    color: darkblue;
 }
 
 body.minion-theme p,
@@ -129,16 +132,14 @@ body.minion-theme select,
 body.minion-theme textarea,
 body.minion-theme button {
     font-family: 'Finger Paint', cursive;
-    color: #FF0000;
-    -webkit-text-stroke: 1px #000000;
-    text-stroke: 1px #000000;
+    color: darkblue;
 }
 
 body.valyrian-theme h1 {
     font-family: 'Cinzel', serif;
     color: #000000;
-    -webkit-text-stroke: 1px #D4AF37;
-    text-stroke: 1px #D4AF37;
+    -webkit-text-stroke: 1px #dab628;
+    text-stroke: 1px #dab628;
 }
 
 body.valyrian-theme p,
@@ -148,24 +149,32 @@ body.valyrian-theme textarea,
 body.valyrian-theme button {
     font-family: 'Cinzel', serif;
     color: #000000;
-    -webkit-text-stroke: 0.5px #D4AF37;
-    text-stroke: 0.5px #D4AF37;
+    -webkit-text-stroke: 1px #dab628;
+    text-stroke: 1px #dab628;
 }
 
 body.pirate-theme h1 {
-    font-family: 'Pirata One', cursive;
-    color: #FF0000;
-    -webkit-text-stroke: 2px #000000;
-    text-stroke: 2px #000000;
+    font-family: 'Pirata One';
+    color: #f38830;
+    -webkit-text-stroke: 1.5px #000000;
+    text-stroke: 1.5px #000000;
+    font-size: 80px;
 }
 
-body.pirate-theme p,
+body.pirate-theme p {
+    font-family: 'Pirata One', cursive;
+    color: #f38830;
+    -webkit-text-stroke: 1.5px #000000;
+    text-stroke: 1.5px #000000;
+    font-size: 60px;
+}
 body.pirate-theme label,
 body.pirate-theme select,
 body.pirate-theme textarea,
 body.pirate-theme button {
     font-family: 'Pirata One', cursive;
-    color: #FF0000;
-    -webkit-text-stroke: 1px #000000;
-    text-stroke: 1px #000000;
+    color: #f38830;
+    -webkit-text-stroke: 1.5px #000000;
+    text-stroke: 1.5px #000000;
+    font-size: 40px;
 }
