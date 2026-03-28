@@ -9,29 +9,38 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-    <h1>Fantasy Translation App</h1>
-    </div>
-    <div class="translator">
-        <p>Translate your text into fantasy language here!</p>
-        <p>
-            <label for="SelectLanguage">Select language:</label>
-            <select name="language" id="language" onchange="changeTheme(this.value)">
-                <option value="universal">---Please choose an option---</option>
-                <option value="minion">Minion Language</option>
-                <option value="gameofthrones">High Valyrian</option>
-                <option value="pirate">Pirate speak</option>
-                </select>
-        </p> 
-        <textarea id="inputText" rows="10" cols="50" placeholder="Enter text to translate..."></textarea>
-        <textarea id="outputText" rows="10" cols="50" placeholder="Translation will appear here..." readonly></textarea>
-        <p>
-            <button>Translate!</button>
-        </p>
-    </div>
+    <div class="main-layout">
+        <div class="content">
 
-    <div class="right-box">
-        <h2>About the language</h2>
-        <p>Test test test</p>
+            <div class="container">
+                <h1>Fantasy Translation App</h1>
+            </div>
+
+            <div class="translator">
+                <p>Translate your text into fantasy language here!</p>
+                <p>
+                    <label for="SelectLanguage">Select language:</label>
+                    <select name="language" id="language" onchange="changeTheme(this.value)">
+                        <option value="universal">---Please choose an option---</option>
+                        <option value="minion">Minion Language</option>
+                        <option value="gameofthrones">High Valyrian</option>
+                        <option value="pirate">Pirate speak</option>
+                    </select>
+                </p> 
+
+                <textarea id="inputText" rows="10" placeholder="Enter text to translate..."></textarea>
+                <textarea id="outputText" rows="10" placeholder="Translation will appear here..." readonly></textarea>
+
+                <p>
+                    <button>Translate!</button>
+                </p>
+            </div>
+        </div>
+
+        <div class="right-box">
+            <h2>About the language</h2>
+            <p>Test test test</p>
+        </div>
+
     </div>
 </body>
