@@ -154,10 +154,11 @@ body.pirate-theme {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    cursor: auto;
-    .translator {
+}
+
+body.pirate-theme .translator,
+body.pirate-theme .right-box {
     background: rgba(85, 67, 63, 0.5);
-  }
 }
 
 body.minion-theme h1 {
