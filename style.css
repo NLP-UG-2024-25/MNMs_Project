@@ -141,10 +141,11 @@ body.valyrian-theme {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    cursor: auto;
-    .translator {
+}
+
+body.valyrian-theme .translator,
+body.valyrian-theme .right-box {
     background: rgba(59, 63, 105, 0.5);
-  }
 }
 
 body.pirate-theme {
