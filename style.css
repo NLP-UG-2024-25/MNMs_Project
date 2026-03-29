@@ -30,10 +30,6 @@ body {
   margin: 0;
 }
 
-body:not(.minion-theme):not(.valyrian-theme):not(.pirate-theme) * {
-  cursor: url('wand.png'), auto;
-}
-
 h1 {
   color: rgb(116, 29, 121);
       -webkit-text-stroke: 1.5px #361332;
@@ -133,9 +129,7 @@ body.minion-theme {
   .translator {
     background: rgba(248, 222, 60, 0.5);
   }
-  * {
-    cursor: url('banana.png'), auto;
-  }
+
 }
 
 body.valyrian-theme {
