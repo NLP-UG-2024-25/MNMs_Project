@@ -126,9 +126,10 @@ body.minion-theme {
   background-repeat: no-repeat;
   background-attachment: fixed;
   cursor: auto;
-  .translator {
-    background: rgba(248, 222, 60, 0.5);
-  }
+body.minion-theme .translator,
+body.minion-theme .right-box {
+  background: rgba(248, 222, 60, 0.5);
+}
 
 }
 
