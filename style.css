@@ -297,3 +297,10 @@ select {
     border: none;
     cursor: pointer;
 }
+
+footer p {
+  font-family: Georgia, 'Times New Roman', serif !important;
+  font-size: 16px !important;
+  color: black !important;
+  -webkit-text-stroke: 0 !important;
+}
