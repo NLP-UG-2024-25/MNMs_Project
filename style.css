@@ -24,13 +24,14 @@ body {
   background-image: url("fantasy.jpg");
   background-size: cover;      
   background-repeat: no-repeat;
-  background-size: cover;
   background-attachment: fixed;
   background-position: center;  
   min-height: 100vh;
   margin: 0;
+}
+
+body:not(.minion-theme):not(.valyrian-theme):not(.pirate-theme) * {
   cursor: url('wand.png'), auto;
- 
 }
 
 h1 {
