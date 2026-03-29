@@ -40,6 +40,13 @@ h1 {
   text-align: center;
 
 }
+h2 {
+  color: rgb(116, 29, 121);
+      -webkit-text-stroke: 1.5px #361332;
+  font-family: Unkempt;
+  font-size: 60px; 
+  text-align: center;
+}
 p {
   font-family: Unkempt;
   font-size: 20px;
@@ -64,11 +71,21 @@ button {
 }
 
 .right-box {
-    width: 300px;
-    margin-left: 20px;
-    border: 2px solid black;
+    width: 20%;
+    margin: 10px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    background: rgba(184, 94, 198, 0.5);
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+
 
 @media (min-width: 600px) {
   h1 {
@@ -80,6 +97,7 @@ button {
   .container {
     height: 20%;
   }
+
 }
 
 .container {
@@ -192,7 +210,16 @@ body.pirate-theme button {
     -webkit-text-stroke: 1.5px #000000;
     font-size: 40px;
 }
+@media (max-width: 1000px) {
+  .main-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .right-box {
+    width: 90%;
 
+}
+}
 @media (max-width: 599px) {
 
   body {
@@ -225,10 +252,6 @@ body.pirate-theme button {
     margin: 1rem;
     max-width: 100%;
   }
-}
-
-@media (max-width: 599px) {
-
   body.pirate-theme h1 {
     font-size: 42px;
   }
