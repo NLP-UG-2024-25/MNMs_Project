@@ -119,48 +119,36 @@ button {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+
+@media (max-width: 1000px) {
+  .main-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .right-box {
+    width: 90%;
+
+}
+}
+
 body.minion-theme {
-  background-image: url("minionek.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  cursor: auto;
+    background-image: url("minionek.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
 body.minion-theme .translator,
 body.minion-theme .right-box {
-  background: rgba(248, 222, 60, 0.5);
-}
-
-}
-
-body.valyrian-theme {
-    background-image: url("got.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    cursor: auto;
-    .translator {
-    background: rgba(59, 63, 105, 0.5);
-  }
-}
-
-body.pirate-theme {
-    background-image: url("piraci.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    cursor: auto;
-    .translator {
-    background: rgba(85, 67, 63, 0.5);
-  }
+    background: rgba(248, 222, 60, 0.7);
 }
 
 body.minion-theme h1 {
     font-family: 'Chewy', cursive;
     color: darkblue;
-        -webkit-text-stroke: 1.5px darkblue;
+    -webkit-text-stroke: 1.5px darkblue;
 }
 
 body.minion-theme p,
@@ -172,7 +160,21 @@ body.minion-theme button {
     color: darkblue;
 }
 
-body.valyrian-theme h1 {
+body.valyrian-theme {
+    background-image: url("got.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.valyrian-theme .translator,
+body.valyrian-theme .right-box {
+    background: rgba(59, 63, 105, 0.6);
+}
+
+body.valyrian-theme h1,
+body.valyrian-theme h2 {
     font-family: 'Cinzel', serif;
     color: #000000;
     -webkit-text-stroke: 1px #dab628;
@@ -188,6 +190,19 @@ body.valyrian-theme button {
     -webkit-text-stroke: 1px #dab628;
 }
 
+body.pirate-theme {
+    background-image: url("piraci.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.pirate-theme .translator,
+body.pirate-theme .right-box {
+    background: rgba(85, 67, 63, 0.8);
+}
+
 body.pirate-theme h1 {
     font-family: 'Pirata One';
     color: #f38830;
@@ -201,6 +216,7 @@ body.pirate-theme p {
     -webkit-text-stroke: 1.5px #000000;
     font-size: 60px;
 }
+
 body.pirate-theme label,
 body.pirate-theme select,
 body.pirate-theme textarea,
@@ -210,16 +226,7 @@ body.pirate-theme button {
     -webkit-text-stroke: 1.5px #000000;
     font-size: 40px;
 }
-@media (max-width: 1000px) {
-  .main-layout {
-    display: flex;
-    flex-direction: column;
-  }
-  .right-box {
-    width: 90%;
 
-}
-}
 @media (max-width: 599px) {
 
   body {
