@@ -135,53 +135,17 @@ button {
 }
 
 body.minion-theme {
-<<<<<<< HEAD
     background-image: url("minionek.jpg");
-=======
-  background-image: url("minionek.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-body.minion-theme .translator,
-body.minion-theme .right-box {
-  background: rgba(255, 221, 0, 0.75);
-}
-
-body.valyrian-theme {
-    background-image: url("got.jpg");
->>>>>>> e4fa33ba92146bc0721577e04152884e9c73a36a
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-<<<<<<< HEAD
 
 body.minion-theme .translator,
 body.minion-theme .right-box {
     background: rgba(248, 222, 60, 0.7);
-=======
-body.valyrian-theme .translator,
-body.valyrian-theme .right-box {
-    background: rgba(59, 63, 105, 0.75);
-}
-
-body.pirate-theme {
-    background-image: url("piraci.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-body.pirate-theme .translator,
-body.pirate-theme .right-box {
-    background: rgba(85, 67, 63, 0.5);
->>>>>>> e4fa33ba92146bc0721577e04152884e9c73a36a
 }
 
 body.minion-theme h1 {
