@@ -78,18 +78,31 @@ button {
 
 .right-box {
     width: 20%;
-    margin: 10px;
-    padding: 10px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    gap: 1.5rem;
+    text-align: left; 
+    gap: 1rem;
+
     background: rgba(184, 94, 198, 0.5);
     border-radius: 16px;
-    padding: 2rem;
-    max-width: 600px;
-    margin: 2rem auto;
+    padding: 1.5rem;
+
+    max-width: 400px;
+    height: 500px; 
+    overflow-y: auto; 
+
+    margin: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+#languageInfo {
+  font-size: 15px;        
+  line-height: 1.6;       
+  white-space: pre-line;  
+}
+
+.right-box h2 {
+  font-size: 26px;
 }
 
 
@@ -135,9 +148,12 @@ button {
   }
   .right-box {
     width: 90%;
+    height: auto;      
+    max-height: 300px; 
+  }
 
 }
-}
+
 
 body.minion-theme {
     background-image: url("minionek.jpg");
@@ -329,4 +345,17 @@ footer p {
   font-size: 16px !important;
   color: black !important;
   -webkit-text-stroke: 0 !important;
+}
+
+.right-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.right-box::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+.right-box::-webkit-scrollbar-track {
+  background: transparent;
 }
