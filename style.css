@@ -31,6 +31,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  padding-bottom: 80px;
 }
 
 h1 {
@@ -66,26 +67,43 @@ button {
 .main-layout {
     display: flex;
     flex: 1;
+    flex-grow: 1;
 }
 
 .content {
     flex: 1;
+    display: flex;           
+    flex-direction: column;  
 }
+
 
 .right-box {
     width: 20%;
-    margin: 10px;
-    padding: 10px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    gap: 1.5rem;
+    text-align: left; 
+    gap: 1rem;
+
     background: rgba(184, 94, 198, 0.5);
     border-radius: 16px;
-    padding: 2rem;
-    max-width: 600px;
-    margin: 2rem auto;
+    padding: 1.5rem;
+
+    max-width: 400px;
+    height: 500px; 
+    overflow-y: auto; 
+
+    margin: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+#languageInfo {
+  font-size: 15px;        
+  line-height: 1.6;       
+  white-space: pre-line;  
+}
+
+.right-box h2 {
+  font-size: 26px;
 }
 
 
@@ -131,12 +149,16 @@ button {
   }
   .right-box {
     width: 90%;
+    height: auto;      
+    max-height: 300px; 
+  }
 
 }
-}
+
 
 body.minion-theme {
     background-image: url("minionek.jpg");
+=======
   background-image: url("minionek.jpg");
   background-size: cover;
   background-position: center;
@@ -151,6 +173,7 @@ body.minion-theme .right-box {
 
 body.valyrian-theme {
     background-image: url("got.jpg");
+>>>>>>> e4fa33ba92146bc0721577e04152884e9c73a36a
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -161,7 +184,7 @@ body.valyrian-theme {
 body.minion-theme .translator,
 body.minion-theme .right-box {
     background: rgba(248, 222, 60, 0.7);
-}
+=======
 body.valyrian-theme .translator,
 body.valyrian-theme .right-box {
     background: rgba(59, 63, 105, 0.75);
@@ -178,12 +201,19 @@ body.pirate-theme {
 body.pirate-theme .translator,
 body.pirate-theme .right-box {
     background: rgba(85, 67, 63, 0.5);
+>>>>>>> e4fa33ba92146bc0721577e04152884e9c73a36a
 }
 
 body.minion-theme h1 {
     font-family: 'Chewy', cursive;
     color: darkblue;
     -webkit-text-stroke: 1.5px darkblue;
+}
+body.minion-theme .right-box h2 {
+  font-family: 'Chewy', cursive;
+  color: darkblue;
+  -webkit-text-stroke: 1px darkblue;
+  font-size: 28px;
 }
 
 body.minion-theme p,
@@ -245,6 +275,13 @@ body.pirate-theme h1 {
     font-size: 80px;
 }
 
+body.pirate-theme .right-box h2 {
+  font-family: 'Pirata One', cursive;
+  color: #ffb347; 
+  -webkit-text-stroke: 1.5px #000000;
+  font-size: 34px;
+}
+
 body.pirate-theme p {
     font-family: 'Pirata One', cursive;
     color: #f38830;
@@ -260,6 +297,14 @@ body.pirate-theme button {
     color: #f38830;
     -webkit-text-stroke: 1.5px #000000;
     font-size: 40px;
+}
+
+body.pirate-theme #languageInfo {
+  color: #ffb347;            
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-text-stroke: 0.5px #000000; 
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6); 
 }
 
 @media (max-width: 599px) {
@@ -346,8 +391,9 @@ footer {
   text-align: center;
   padding: 1rem;
   box-sizing: border-box;
-  position: sticky;
+  margin-top: auto;
   bottom: 0;
+  left: 0; 
 }
 
 footer p {
@@ -355,43 +401,4 @@ footer p {
   font-size: 16px !important;
   color: black !important;
   -webkit-text-stroke: 0 !important;
-}
-
-body.yoda-theme {
-  background-image: url("dagobah.jpg");
-  background-color: #2d3e2d;
-}
-
-body.yoda-theme .translator,
-body.yoda-theme .right-box {
-  background: rgba(76, 89, 68, 0.85);
-  border: 3px solid #99aa77;
-  box-shadow: 0 0 20px rgba(153, 170, 119, 0.5);
-}
-
-body.yoda-theme h1,
-body.yoda-theme h2 {
-  font-family: 'Patrick Hand', cursive;
-  color: #d4ef70;
-  -webkit-text-stroke: 1px #1a230e;
-}
-
-body.yoda-theme p,
-body.yoda-theme label,
-body.yoda-theme select,
-body.yoda-theme textarea,
-body.yoda-theme button {
-  font-family: 'Patrick Hand', cursive;
-  color: #1b3022;
-}
-
-body.yoda-theme button {
-  background-color: #4c5944;
-  color: #d4ef70;
-  border: 2px solid #d4ef70;
-  box-shadow: 0 6px #2d3e2d;
-}
-
-body.yoda-theme button:hover {
-  background-color: #5d6d53;
 }
