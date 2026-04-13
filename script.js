@@ -1,6 +1,6 @@
 function changeTheme(selectedLanguage) {
 
-    document.body.classList.remove('universal', 'minion-theme', 'valyrian-theme', 'pirate-theme', 'yoda-theme');
+    document.body.classList.remove('universal', 'minion-theme', 'valyrian-theme', 'pirate-theme');
     if (selectedLanguage === 'universal') {
     
     } else if (selectedLanguage === 'gameofthrones') {
@@ -9,7 +9,5 @@ function changeTheme(selectedLanguage) {
         document.body.classList.add('pirate-theme');
     } else if (selectedLanguage === 'minion') {
         document.body.classList.add('minion-theme');
-    } else if (selectedLanguage === 'starwars') {
-        document.body.classList.add('yoda-theme');
     }
 }
