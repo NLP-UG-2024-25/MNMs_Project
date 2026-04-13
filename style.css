@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Pirata+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @font-face {
   font-family: 'Chewy';
   font-style: normal;
@@ -135,9 +136,7 @@ button {
 }
 
 body.minion-theme {
-<<<<<<< HEAD
     background-image: url("minionek.jpg");
-=======
   background-image: url("minionek.jpg");
   background-size: cover;
   background-position: center;
@@ -152,19 +151,17 @@ body.minion-theme .right-box {
 
 body.valyrian-theme {
     background-image: url("got.jpg");
->>>>>>> e4fa33ba92146bc0721577e04152884e9c73a36a
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-<<<<<<< HEAD
 
 body.minion-theme .translator,
 body.minion-theme .right-box {
     background: rgba(248, 222, 60, 0.7);
-=======
+}
 body.valyrian-theme .translator,
 body.valyrian-theme .right-box {
     background: rgba(59, 63, 105, 0.75);
@@ -181,7 +178,6 @@ body.pirate-theme {
 body.pirate-theme .translator,
 body.pirate-theme .right-box {
     background: rgba(85, 67, 63, 0.5);
->>>>>>> e4fa33ba92146bc0721577e04152884e9c73a36a
 }
 
 body.minion-theme h1 {
@@ -359,4 +355,43 @@ footer p {
   font-size: 16px !important;
   color: black !important;
   -webkit-text-stroke: 0 !important;
+}
+
+body.yoda-theme {
+  background-image: url("dagobah.jpg");
+  background-color: #2d3e2d;
+}
+
+body.yoda-theme .translator,
+body.yoda-theme .right-box {
+  background: rgba(76, 89, 68, 0.85);
+  border: 3px solid #99aa77;
+  box-shadow: 0 0 20px rgba(153, 170, 119, 0.5);
+}
+
+body.yoda-theme h1,
+body.yoda-theme h2 {
+  font-family: 'Patrick Hand', cursive;
+  color: #d4ef70;
+  -webkit-text-stroke: 1px #1a230e;
+}
+
+body.yoda-theme p,
+body.yoda-theme label,
+body.yoda-theme select,
+body.yoda-theme textarea,
+body.yoda-theme button {
+  font-family: 'Patrick Hand', cursive;
+  color: #1b3022;
+}
+
+body.yoda-theme button {
+  background-color: #4c5944;
+  color: #d4ef70;
+  border: 2px solid #d4ef70;
+  box-shadow: 0 6px #2d3e2d;
+}
+
+body.yoda-theme button:hover {
+  background-color: #5d6d53;
 }
