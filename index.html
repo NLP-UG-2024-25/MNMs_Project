@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Fantasy Translation App</title>
     <meta charset="utf-8">
@@ -8,21 +10,24 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body>
-    <div class="main-layout">
-        <div class="content">
 
-            <div class="container">
-                <h1>Fantasy Translation App</h1>
-            </div>
+<body>
+    <div class="content">
+
+        <div class="container">
+            <h1>Fantasy Translation App</h1>
+        </div>
+
+        <div class="main-layout">
 
             <div class="translator">
-                <p>Translate your text into fantasy language here!</p>
+                <p>Translate your text into a fantasy language here!</p>
+
                 <p>
-                    <label for="SelectLanguage">Select language:</label>
+                    <label for="language">Translate to:</label>
                     <select name="language" id="language" onchange="changeTheme(this.value)">
-                        <option value="universal">---Please choose an option---</option>
-                        <option value="minion">Minion Language</option>
+                        <option value="universal">Choose one...</option>
+                        <option value="minion">Minionese</option>
                         <option value="gameofthrones">High Valyrian</option>
                         <option value="pirate">Pirate speak</option>
                     </select>
@@ -35,17 +40,17 @@
                     <button>Translate!</button>
                 </p>
             </div>
-        </div>
 
-        <div class="right-box">
-            <h2>About the language</h2>
-            <p id="languageInfo">Choose a language to see details...</p>
-        </div>
+            <div class="right-box">
+                <h2>About the language</h2>
+                <p id="languageInfo">Choose a language to read about it.</p>
+            </div>
 
+        </div>
     </div>
 
     <footer>
         <p>Translation powered by <a href="https://www.google.com">Name of API</a> by Someone.</p>
     </footer>
-    
 </body>
+</html>
