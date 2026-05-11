@@ -52,3 +52,38 @@ function changeTheme(selectedLanguage) {
     }
     updateLanguageInfo(selectedLanguage);
 }
+///tu narazie tylko minionki, pewnie trzeba bedzie to podpiąć do tych motywów?
+const inputText = document.getElementById("inputText");
+const outputText = document.getElementById("outputText");
+const translateBtn = document.querySelector("button");
+
+const url = "https://fun-trans.duckdns.org/minion";
+const apiKey = "UG-5tud3nt-2026";
+
+function handleTranslation() {
+    const textToTranslate = inputText.value;
+
+    fetch(url, {
+        method: 'POST',
+        headers: {
+            'accept': 'application/json',
+            'x-api-key': apiKey,
+            'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                "text": textToTranslate
+            })
+    })
+    .then(response => response.text())
+    .then(response => {
+        const translatedData = response;
+        console.log(translatedData)
+        outputText.value = translatedData;
+    })
+    .catch(error => {
+        console.error("Translation failed:", error);
+        outputText.value = "Error: Could not connect to the API.";
+    });
+}
+
+translateBtn.addEventListener("click", handleTranslation);
