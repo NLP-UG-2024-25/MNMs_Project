@@ -189,6 +189,7 @@ button {
     width: 100%;
 
     display: flex;
+    height: auto;
     flex-direction: column;
 
     text-align: center;
