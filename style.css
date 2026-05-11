@@ -479,8 +479,6 @@ body.pirate-theme select {
     box-shadow: 0 9px #5a3a1e;
 }
 
-
-
 footer {
   width: 100%;
   text-align: center;
@@ -489,6 +487,39 @@ footer {
   margin-top: auto;
   bottom: 0;
   left: 0; 
+
+  margin-top: 4rem;
+
+  position: relative;
+  z-index: 10;
+
+  backdrop-filter: blur(4px);
+  border-top: 2px solid rgba(0,0,0,0.2);
+  border-bottom: 2px solid rgba(0,0,0,0.2);
+}
+
+body:not(.minion-theme):not(.valyrian-theme):not(.pirate-theme) footer {
+  background: rgba(184, 94, 198, 0.5);
+  border-top: 2px solid #5b1d63;
+  border-bottom: 2px solid #5b1d63;
+}
+
+body.minion-theme footer {
+  background: rgba(248, 222, 60, 0.7);
+  border-top: 2px solid #1e3a8a;
+  border-bottom: 2px solid #1e3a8a;
+}
+
+body.valyrian-theme footer {
+  background: rgba(59, 63, 105, 0.6);
+  border-top: 2px solid #2f2a4a;
+  border-bottom: 2px solid #2f2a4a;
+}
+
+body.pirate-theme footer {
+  background: rgba(131, 114, 106, 0.85);
+  border-top: 2px solid #5a3a1e;
+  border-bottom: 2px solid #5a3a1e;
 }
 
 footer p {
@@ -496,6 +527,22 @@ footer p {
   font-size: 16px !important;
   color: black !important;
   -webkit-text-stroke: 0 !important;
+}
+
+body.valyrian-theme footer p {
+  color: #333333 !important;
+}
+
+body.pirate-theme footer p {
+  color: #2b1208 !important;
+}
+
+body.minion-theme footer p {
+  color: #1e3a8a !important;
+}
+
+body:not(.minion-theme):not(.valyrian-theme):not(.pirate-theme) footer p {
+  color: darkblue !important;
 }
 
 .right-box::-webkit-scrollbar {
