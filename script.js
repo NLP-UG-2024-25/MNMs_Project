@@ -36,9 +36,11 @@ let Langurl = "mainpage"
 function changeTheme(selectedLanguage) {
 
     document.body.classList.remove('universal', 'minion-theme', 'valyrian-theme', 'pirate-theme');
-    if (selectedLanguage === 'universal') {
 
-    } else if (selectedLanguage === 'gameofthrones') {
+    const inputBox = document.getElementById('inputText');
+    const outputBox = document.getElementById('outputText');
+
+    if (selectedLanguage === 'gameofthrones') {
         document.body.classList.add('valyrian-theme');
         Langurl = "valyrian"
     } else if (selectedLanguage === 'pirate') {
@@ -48,8 +50,6 @@ function changeTheme(selectedLanguage) {
         document.body.classList.add('minion-theme');
         Langurl = "minion"
     }
-    url = Baseurl + Langurl; 
-    console.log("Current url:", url);
     updateLanguageInfo(selectedLanguage);
 }
 
