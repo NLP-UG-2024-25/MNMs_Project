@@ -32,7 +32,7 @@ These features create a shared, performative dialect that signals identity rathe
         info.textContent = "Choose a language to see details...";
     }
 }
-
+let Langurl = "mainpage"
 function changeTheme(selectedLanguage) {
 
     document.body.classList.remove('universal', 'minion-theme', 'valyrian-theme', 'pirate-theme');
@@ -40,36 +40,32 @@ function changeTheme(selectedLanguage) {
     const inputBox = document.getElementById('inputText');
     const outputBox = document.getElementById('outputText');
 
-    if (selectedLanguage === 'universal') {
-        inputBox.style.display = 'none';
-        outputBox.style.display = 'none';
-    } else {
-        inputBox.style.display = 'block';
-        outputBox.style.display = 'block';
-    }
-
     if (selectedLanguage === 'gameofthrones') {
         document.body.classList.add('valyrian-theme');
+        Langurl = "valyrian"
     } else if (selectedLanguage === 'pirate') {
         document.body.classList.add('pirate-theme');
+        Langurl = "pirate"
     } else if (selectedLanguage === 'minion') {
         document.body.classList.add('minion-theme');
+        Langurl = "minion"
     }
-
     updateLanguageInfo(selectedLanguage);
 }
 
-///tu narazie tylko minionki, pewnie trzeba bedzie to podpiąć do tych motywów?
 const inputText = document.getElementById("inputText");
 const outputText = document.getElementById("outputText");
 const translateBtn = document.querySelector("button");
 
-const url = "https://fun-trans.duckdns.org/minion";
+const Baseurl = "https://fun-trans.duckdns.org/";
 const apiKey = "UG-5tud3nt-2026";
 
 function handleTranslation() {
+    if (Langurl == "mainpage") {
+        alert("Choose the language!")
+        return
+    }
     const textToTranslate = inputText.value;
-
     fetch(url, {
         method: 'POST',
         headers: {
