@@ -32,32 +32,36 @@ These features create a shared, performative dialect that signals identity rathe
         info.textContent = "Choose a language to see details...";
     }
 }
-
+let Langurl = "";
 function changeTheme(selectedLanguage) {
 
     document.body.classList.remove('universal', 'minion-theme', 'valyrian-theme', 'pirate-theme');
     if (selectedLanguage === 'universal') {
-    
+        Langurl = "mainpage"
     } else if (selectedLanguage === 'gameofthrones') {
         document.body.classList.add('valyrian-theme');
+        Langurl = "valyrian"
     } else if (selectedLanguage === 'pirate') {
         document.body.classList.add('pirate-theme');
+        Langurl = "pirate"
     } else if (selectedLanguage === 'minion') {
         document.body.classList.add('minion-theme');
+        Langurl = "minion"
     }
+    url = Baseurl + Langurl; 
+    console.log("Current url:", url);
     updateLanguageInfo(selectedLanguage);
 }
-///tu narazie tylko minionki, pewnie trzeba bedzie to podpiąć do tych motywów?
+
 const inputText = document.getElementById("inputText");
 const outputText = document.getElementById("outputText");
 const translateBtn = document.querySelector("button");
 
-const url = "https://fun-trans.duckdns.org/minion";
+const Baseurl = "https://fun-trans.duckdns.org/";
 const apiKey = "UG-5tud3nt-2026";
 
 function handleTranslation() {
     const textToTranslate = inputText.value;
-
     fetch(url, {
         method: 'POST',
         headers: {
