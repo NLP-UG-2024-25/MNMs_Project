@@ -34,6 +34,8 @@ These features create a shared, performative dialect that signals identity rathe
 }
 let Langurl = "mainpage"
 function changeTheme(selectedLanguage) {
+    inputText.value = "";
+    outputText.textContent = "";
 
     document.body.classList.remove('universal', 'minion-theme', 'valyrian-theme', 'pirate-theme');
     if (selectedLanguage === 'universal') {
