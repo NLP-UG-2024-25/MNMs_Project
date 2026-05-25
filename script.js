@@ -32,12 +32,12 @@ These features create a shared, performative dialect that signals identity rathe
         info.textContent = "Choose a language to see details...";
     }
 }
-let Langurl = "";
+let Langurl = "mainpage"
 function changeTheme(selectedLanguage) {
 
     document.body.classList.remove('universal', 'minion-theme', 'valyrian-theme', 'pirate-theme');
     if (selectedLanguage === 'universal') {
-        Langurl = "mainpage"
+
     } else if (selectedLanguage === 'gameofthrones') {
         document.body.classList.add('valyrian-theme');
         Langurl = "valyrian"
@@ -61,6 +61,10 @@ const Baseurl = "https://fun-trans.duckdns.org/";
 const apiKey = "UG-5tud3nt-2026";
 
 function handleTranslation() {
+    if (Langurl == "mainpage") {
+        alert("Choose the language!")
+        return
+    }
     const textToTranslate = inputText.value;
     fetch(url, {
         method: 'POST',
