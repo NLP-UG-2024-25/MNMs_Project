@@ -52,6 +52,7 @@ function changeTheme(selectedLanguage) {
         document.body.classList.add('minion-theme');
         Langurl = "minion"
     }
+    url = Baseurl + Langurl;
     updateLanguageInfo(selectedLanguage);
 }
 
