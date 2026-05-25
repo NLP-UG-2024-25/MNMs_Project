@@ -36,17 +36,29 @@ These features create a shared, performative dialect that signals identity rathe
 function changeTheme(selectedLanguage) {
 
     document.body.classList.remove('universal', 'minion-theme', 'valyrian-theme', 'pirate-theme');
+
+    const inputBox = document.getElementById('inputText');
+    const outputBox = document.getElementById('outputText');
+
     if (selectedLanguage === 'universal') {
-    
-    } else if (selectedLanguage === 'gameofthrones') {
+        inputBox.style.display = 'none';
+        outputBox.style.display = 'none';
+    } else {
+        inputBox.style.display = 'block';
+        outputBox.style.display = 'block';
+    }
+
+    if (selectedLanguage === 'gameofthrones') {
         document.body.classList.add('valyrian-theme');
     } else if (selectedLanguage === 'pirate') {
         document.body.classList.add('pirate-theme');
     } else if (selectedLanguage === 'minion') {
         document.body.classList.add('minion-theme');
     }
+
     updateLanguageInfo(selectedLanguage);
 }
+
 ///tu narazie tylko minionki, pewnie trzeba bedzie to podpiąć do tych motywów?
 const inputText = document.getElementById("inputText");
 const outputText = document.getElementById("outputText");
