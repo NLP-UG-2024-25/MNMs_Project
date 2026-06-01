@@ -43,6 +43,16 @@
 #outputText {
     display: none;
 }
+.page {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;            /* Spacing between the left content and right box */
+    padding: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
 
 /* Show when a theme is selected */
 body.minion-theme #inputText,
@@ -112,7 +122,10 @@ button {
   font-size: 30px;
   color: darkblue;
 }
-
+.page {
+  display: flex;
+  flex-direction: row;
+}
 .main-layout {
     display: flex;
     gap: 8rem;

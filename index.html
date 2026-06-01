@@ -17,43 +17,46 @@
 </head>
 
 <body>
-    <div class="content">
+    <div class="page">
+        <div class="content">
 
-        <div class="container">
-            <h1>Translate your text into a fantasy language here!</h1>
-        </div>
+            <div class="container">
+                <h1>Translate your text into a fantasy language here!</h1>
+            </div>
 
-        <div class="main-layout">
+            <div class="main-layout">
 
-            <div class="translator">
+                <div class="translator">
               
 
-                <p>
-                    <label for="language">Translate to:</label>
-                    <select name="language" id="language" onchange="changeTheme(this.value)">
-                        <option value="universal">Choose one...</option>
-                        <option value="minion">Minionese</option>
-                        <option value="gameofthrones">High Valyrian</option>
-                        <option value="pirate">Pirate speak</option>
-                    </select>
-                </p> 
+                    <p>
+                        <label for="language">Translate to:</label>
+                        <select name="language" id="language" onchange="changeTheme(this.value)">
+                            <option value="universal">Choose one...</option>
+                            <option value="minion">Minionese</option>
+                            <option value="gameofthrones">High Valyrian</option>
+                            <option value="pirate">Pirate speak</option>
+                        </select>
+                    </p> 
 
-                <textarea id="inputText" rows="10" placeholder="Enter text to translate..."></textarea>
-                <p>
-                    <button>Translate!</button>
-                </p>
-                <textarea id="outputText" rows="10" placeholder="Translation will appear here..." readonly></textarea>
+                    <textarea id="inputText" rows="10" placeholder="Enter text to translate..."></textarea>
+                    <p>
+                        <button>Translate!</button>
+                    </p>
+                    <textarea id="outputText" rows="10" placeholder="Translation will appear here..." readonly></textarea>
+
+                </div>
+                
+            
 
             </div>
-
-            <div class="right-box">
-                <h2>About the language</h2>
-                <p id="languageInfo">Choose a language to read about it.</p>
-            </div>
-
         </div>
-    </div>
+        <div class="right-box">
+                    <h2>About the language</h2>
+                    <p id="languageInfo">Choose a language to read about it.</p>
+                </div>
 
+    </div>
     <footer>
         <p>Translation powered by <a href="https://www.google.com">Name of API</a> by Someone.</p>
     </footer>
