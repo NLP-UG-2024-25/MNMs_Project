@@ -2,31 +2,13 @@ function updateLanguageInfo(language) {
     const info = document.getElementById("languageInfo");
 
     if (language === "minion") {
-        info.textContent = `The language spoken by the Minions in "Despicable Me" is known informally as "Minionese." Unlike fully constructed languages, Minionese is a playful hybrid of multiple real-world languages, including English, Spanish, French, Italian, and even bits of Korean or Japanese.
-
-It was developed by the filmmakers and voice actors (notably Pierre Coffin) to sound humorous and universally understandable. Rather than strict grammar, it relies on recognizable words, exaggerated pronunciation, and emotional tone.
-
-For example, words like "banana" or "gelato" are used directly, while other phrases are invented but resemble real languages. The structure is loose and adaptive—grammar rules are inconsistent, and meaning is often conveyed through intonation, repetition, and visual context.
-
-Minionese works because it taps into linguistic familiarity without requiring comprehension. Viewers can often guess the meaning based on similarity to known words, making it a highly effective comedic tool rather than a formal language.`;
+        info.textContent = `Minionese is the informal, playful language spoken by the Minions in Despicable Me. It is not a true constructed language but a mix of real languages such as English, Spanish, French, Italian, Korean, and Japanese. Created by filmmakers and voice actor Pierre Coffin, it is designed to sound funny and universally understandable. Instead of strict grammar, it uses recognizable words, exaggerated pronunciation, repetition, and tone to convey meaning. Words like “banana” and “gelato” are used directly, while other phrases are invented but resemble real speech. Context and emotion help viewers infer meaning, making Minionese a comedic, intuitive, and accessible language.`;
     } 
     else if (language === "gameofthrones") {
-        info.textContent = `In Game of Thrones, languages such as Dothraki and High Valyrian are among the most fully developed fictional languages in modern media. Originally, author George R. R. Martin created only a few words, but for the TV adaptation, linguist David J. Peterson expanded them into complete systems.
-
-Dothraki is spoken by a nomadic warrior culture and was designed to sound harsh and practical. It has thousands of words and draws inspiration from real languages such as Turkish, Russian, and Swahili. Its grammar is functional but constrained to remain pronounceable for actors.
-
-High Valyrian, on the other hand, serves as a classical or elite language—similar to Latin in medieval Europe. It is no longer commonly spoken in everyday life within the story but is used in education, nobility, and formal contexts. Over time, it evolved into multiple dialects (Low Valyrian), reflecting historical linguistic change.
-
-These languages work as true constructed languages (conlangs), with defined grammar, vocabulary, and phonology. Unlike Minionese, they can be learned and used for real communication.`;
+        info.textContent = `In Game of Thrones, Dothraki and High Valyrian are fully developed constructed languages created by linguist David J. Peterson for the TV adaptation, based on limited words from George R. R. Martin. Dothraki, spoken by nomadic warriors, was designed to sound harsh and practical, drawing influence from languages like Turkish, Russian, and Swahili, with structured grammar and a large vocabulary shaped for actor usability. High Valyrian functions as a prestigious, classical language similar to Latin, used in formal, scholarly, and noble contexts, with multiple derived dialects known as Low Valyrian. Unlike playful fictional speech, both are complete conlangs with real grammatical systems and learnable structure.`;
     } 
     else if (language === "pirate") {
-        info.textContent = `Pirate speak is not a real historical language but a stylized dialect of English shaped by popular culture. Its modern form comes largely from portrayals of pirates in films and literature, especially the influence of actor Robert Newton in the 1950 film "Treasure Island."
-
-Historically, real pirates in the so-called Golden Age of Piracy (17th–18th centuries) would have spoken various dialects of English, Spanish, French, or other languages, depending on their origin. There was no unified "pirate language."
-
-Modern pirate speak works through recognizable lexical patterns and phonetic shifts. Common features include dropping consonants ("sailin"), substituting words ("ye" instead of "you"), and stock phrases ("Ahoy!").
-
-These features create a shared, performative dialect that signals identity rather than conveying linguistic complexity. It is essentially a cultural shorthand for piracy, not a true language system.`;
+        info.textContent = `Pirate speak is a stylized form of English shaped by popular culture, not a real historical language. Its modern image comes from media portrayals, especially Robert Newton’s performance in “Treasure Island” (1950). Historically, pirates spoke various languages and dialects depending on origin, including English, Spanish, and French. There was no single pirate language. Today’s pirate speech uses exaggerated patterns like “ye” for “you,” dropped consonants, and phrases such as “Ahoy!” These features create a recognizable, performative dialect that signals pirate identity rather than complex grammar. It is a cultural shorthand rather than a structured linguistic system.`;
     } 
     else {
         info.textContent = "Choose a language to see details...";
