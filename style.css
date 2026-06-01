@@ -551,3 +551,19 @@ body:not(.minion-theme):not(.valyrian-theme):not(.pirate-theme) footer p {
 .right-box::-webkit-scrollbar-track {
   background: transparent;
 }
+
+.text-boxes {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.text-boxes textarea {
+    flex: 1;
+}
+
+@media (max-width: 599px) {
+    .text-boxes {
+        flex-direction: column;
+    }
+}
