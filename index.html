@@ -14,6 +14,27 @@
     <link rel="preload" href="images/banana.png" as="image">
     <link rel="preload" href="images/got.jpg" as="image">
     <link rel="preload" href="images/piraci.jpg" as="image">
+
+<style>
+  #inputText {
+    width: 40%;
+    max-width: 350px;
+    height: 420px;
+
+    display: block;
+    margin: 0 auto;
+  }
+
+    #outputText {
+    width: 40%;
+    max-width: 350px;
+    height: 420px;
+
+    display: block;
+    margin: 0 auto;
+  }
+</style>
+
 </head>
 
 <body>
@@ -29,21 +50,23 @@
                 <div class="translator">
               
 
-                    <p>
-                        <label for="language">Translate to:</label>
-                        <select name="language" id="language" onchange="changeTheme(this.value)">
-                            <option value="universal">Choose one...</option>
-                            <option value="minion">Minionese</option>
-                            <option value="gameofthrones">High Valyrian</option>
-                            <option value="pirate">Pirate speak</option>
-                        </select>
-                    </p> 
 
-                    <textarea id="inputText" rows="10" placeholder="Enter text to translate..."></textarea>
-                    <p>
-                        <button>Translate!</button>
-                    </p>
-                    <textarea id="outputText" rows="10" placeholder="Translation will appear here..." readonly></textarea>
+                <p>
+                    <label for="language">Translate to:</label>
+                    <select name="language" id="language" onchange="changeTheme(this.value)">
+                        <option value="universal">Choose one...</option>
+                        <option value="minion">Minionese</option>
+                        <option value="gameofthrones">High Valyrian</option>
+                        <option value="pirate">Pirate speak</option>
+                    </select>
+                </p> 
+
+                <textarea id="inputText" rows="10" placeholder="Enter text to translate..."></textarea>
+                <textarea id="outputText" rows="10" placeholder="Translation will appear here..." readonly></textarea>
+
+                  <p>
+                    <button>Translate!</button>
+                </p>
 
                 </div>
                 
