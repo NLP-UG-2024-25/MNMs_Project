@@ -551,3 +551,6 @@ body:not(.minion-theme):not(.valyrian-theme):not(.pirate-theme) footer p {
         flex-direction: column;
     }
 }
+.translator p {
+    margin: 0;
+}
