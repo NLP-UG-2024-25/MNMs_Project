@@ -565,3 +565,7 @@ body:not(.minion-theme):not(.valyrian-theme):not(.pirate-theme) footer p {
 .translator p {
     margin: 0;
 }
+
+.translator {
+    width: 600px;
+}
