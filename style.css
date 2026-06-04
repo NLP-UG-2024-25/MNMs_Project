@@ -118,10 +118,7 @@ button {
   font-size: 30px;
   color: darkblue;
 }
-.page {
-  display: flex;
-  flex-direction: row;
-}
+
 .main-layout {
     display: flex;
     gap: 8rem;
@@ -148,11 +145,12 @@ button {
     border-radius: 16px;
     padding: 1.5rem;
 
-    max-width: 400px;
+    max-width: 100%;
     overflow-y: auto; 
 
     margin: 0;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 #languageInfo {
@@ -564,4 +562,56 @@ body:not(.minion-theme):not(.valyrian-theme):not(.pirate-theme) footer p {
 }
 .translator p {
     margin: 0;
+}
+
+.translator {
+    width: 600px;
+}
+
+@media (max-width: 599px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .page {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+    
+    .right-box {
+        width: calc(100% - 1rem) !important;
+        max-width: 100%;
+        margin: 0 !important;
+        box-sizing: border-box;
+    }
+
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .translator {
+        width: calc(100% - 1rem);
+        box-sizing: border-box;
+    }
+
+    body.pirate-theme p {
+        font-size: 20px;
+    }
+
+    body.pirate-theme .translator {
+        width: calc(100% - 1rem) !important;
+        box-sizing: border-box !important;
+    }
+
+    body.pirate-theme .right-box {
+        width: calc(100% - 1rem) !important;
+        box-sizing: border-box !important;
+    }
+
+    #inputText,
+    #outputText {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
