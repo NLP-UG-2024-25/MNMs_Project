@@ -39,10 +39,16 @@
   src: url(https://fonts.googleapis.com/css2?family=Special+Elite&display=swap);
 }
 
-#inputText,
-#outputText {
+.text-boxes {
     display: none;
 }
+
+body.minion-theme .text-boxes,
+body.valyrian-theme .text-boxes,
+body.pirate-theme .text-boxes {
+    display: flex;
+}
+
 .page {
     display: flex;
     flex-direction: row;
@@ -52,16 +58,6 @@
     justify-content: center;
     width: 100%;
     box-sizing: border-box;
-}
-
-/* Show when a theme is selected */
-body.minion-theme #inputText,
-body.minion-theme #outputText,
-body.valyrian-theme #inputText,
-body.valyrian-theme #outputText,
-body.pirate-theme #inputText,
-body.pirate-theme #outputText {
-    display: block;
 }
 
 button {
@@ -553,7 +549,6 @@ body:not(.minion-theme):not(.valyrian-theme):not(.pirate-theme) footer p {
 }
 
 .text-boxes {
-    display: flex;
     flex-direction: row;
     gap: 1rem;
 }
