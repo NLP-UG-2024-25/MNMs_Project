@@ -281,8 +281,11 @@ body.valyrian-theme p {
     -webkit-text-stroke: 0;
 }
 
+body.valyrian-theme h1 {
+  font-size: 55px !important;
+}
 body.valyrian-theme .right-box {
-  font-size: 30px;
+  font-size: 32px;
 }
 
 body.valyrian-theme .right-box h2 {
@@ -290,7 +293,7 @@ body.valyrian-theme .right-box h2 {
 }
 
 body.valyrian-theme #languageInfo {
-  font-size: 22px;
+  font-size: 21px !important;
 }
 
 body.valyrian-theme label,
