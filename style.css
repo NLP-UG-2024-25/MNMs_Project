@@ -52,12 +52,13 @@ body.pirate-theme .text-boxes {
 .page {
     display: flex;
     flex-direction: row;
-    gap: 3rem;            /* Spacing between the left content and right box */
-    padding: 2rem;
+    gap: 1rem;            /* Spacing between the left content and right box */
+    padding: 1rem;
     align-items: flex-start;
     justify-content: center;
     width: 100%;
     box-sizing: border-box;
+    min-height: calc(100vh - 100px);
 }
 
 button {
@@ -91,7 +92,7 @@ h1 {
   color: rgb(116, 29, 121);
       -webkit-text-stroke: 1.5px #361332;
   font-family: Unkempt;
-  font-size: 60px; 
+  font-size: 36px; 
   text-align: center;
 
 }
@@ -154,24 +155,24 @@ button {
 }
 
 #languageInfo {
-  font-size: 15px;        
+  font-size: 12px;        
   line-height: 1.6;       
   white-space: pre-line;  
 }
 
 .right-box h2 {
-  font-size: 34px;
+  font-size: 22px;
 }
 
 @media (min-width: 600px) {
   h1 {
-    font-size: 80px; 
+    font-size: 60px; 
   }
   p {
-    font-size: 60px;
+    font-size: 20px;
   }
   .container {
-    height: 20%;
+    height: auto;
   }
 
 }
@@ -181,7 +182,8 @@ button {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 30%;
+  height: auto; 
+  padding: 0.5rem
 }
 
 .translator {
@@ -189,10 +191,10 @@ button {
     height: auto;
     flex-direction: column;
     text-align: center;
-    gap: 1.5rem;
+    gap: 1rem;
     background: rgba(184, 94, 198, 0.5);
     border-radius: 16px;
-    padding: 2rem;
+    padding: 1rem;
     max-width: 800px;
     margin: 0;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -314,7 +316,7 @@ body.pirate-theme h1 {
     font-family: 'Pirata One';
     color: #662727;
     -webkit-text-stroke: 0;
-    font-size: 80px;
+    font-size: 40px;
 }
 
 body.pirate-theme .right-box h2 {
@@ -328,7 +330,7 @@ body.pirate-theme p {
     font-family: 'Special Elite', cursive;
     color: #662727;
     -webkit-text-stroke: 0;
-    font-size: 60px;
+    font-size: 20px;
 }
 
 body.pirate-theme label,
@@ -477,7 +479,7 @@ footer {
   bottom: 0;
   left: 0; 
 
-  margin-top: 4rem;
+  margin-top: 1rem;
 
   position: relative;
   z-index: 10;
@@ -565,7 +567,7 @@ body:not(.minion-theme):not(.valyrian-theme):not(.pirate-theme) footer p {
 }
 
 .translator {
-    width: 600px;
+    width: 800px;
 }
 
 @media (max-width: 599px) {
@@ -614,4 +616,13 @@ body:not(.minion-theme):not(.valyrian-theme):not(.pirate-theme) footer p {
         width: 100%;
         box-sizing: border-box;
     }
+}
+
+#languageInfo {
+  font-size: 17px !important;
+}
+
+#inputText,
+#outputText {
+    height: 200px;
 }
