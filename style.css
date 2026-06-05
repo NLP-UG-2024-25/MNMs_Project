@@ -183,7 +183,9 @@ button {
   align-items: center;
   text-align: center;
   height: auto; 
-  padding: 0.5rem
+  padding: 0.5rem;
+  width: 100%;
+  overflow: hidden;
 }
 
 .translator {
@@ -233,6 +235,7 @@ body.minion-theme h1 {
     font-family: 'Chewy', cursive;
     color: darkblue;
     -webkit-text-stroke: 1.5px darkblue;
+    font-size: 55px;
 }
 
 body.minion-theme .right-box h2 {
@@ -316,7 +319,7 @@ body.pirate-theme h1 {
     font-family: 'Pirata One';
     color: #662727;
     -webkit-text-stroke: 0;
-    font-size: 40px;
+    font-size: 64px;
 }
 
 body.pirate-theme .right-box h2 {
@@ -568,6 +571,15 @@ body:not(.minion-theme):not(.valyrian-theme):not(.pirate-theme) footer p {
 
 .translator {
     width: 800px;
+}
+
+h1 {
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.content {
+    min-width: 0;
 }
 
 @media (max-width: 599px) {
