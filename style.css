@@ -94,6 +94,8 @@ h1 {
   font-family: Unkempt;
   font-size: 36px; 
   text-align: center;
+  max-width: 100%;
+  box-sizing: border-box;
 
 }
 
@@ -206,11 +208,13 @@ button {
   .main-layout {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
   .right-box {
-    width: 90%;
+    width: 80%;
     height: auto;      
-    max-height: 300px; 
+    max-height: 300px;
   }
 
 }
@@ -360,11 +364,20 @@ body.pirate-theme #languageInfo {
 
   body {
     background-attachment: scroll;
+    align-items: center;
+    width: 100%;
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 32px;      
     -webkit-text-stroke: 1px #361332;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;       
+    word-break: break-word;   
+    overflow-wrap: break-word;
+    text-align: center;
   }
 
   p {
@@ -377,16 +390,23 @@ body.pirate-theme #languageInfo {
   button {
     font-size: 18px;
   }
-
+  .content {
+    display: flex;
+    justify-content: center; 
+  }
   .container {
     height: auto;
     padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .translator {
     padding: 1.2rem;
-    margin: 1rem;
-    max-width: 100%;
+    margin: 1rem auto;
+    max-width: 90%;     
+    box-sizing: border-box; 
   }
   body.pirate-theme h1 {
     font-size: 42px;
@@ -577,9 +597,15 @@ body:not(.minion-theme):not(.valyrian-theme):not(.pirate-theme) footer p {
 }
 
 h1 {
-    max-width: 100%;
-    overflow-wrap: break-word;
+  h1 {
+  color: rgb(116, 29, 121);
+  -webkit-text-stroke: 1.5px #361332;
+  font-family: Unkempt;
+  font-size: 60px; 
+  text-align: center;
 }
+}
+
 
 .content {
     min-width: 0;
