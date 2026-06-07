@@ -229,10 +229,11 @@ body.minion-theme {
 
 body.minion-theme .translator,
 body.minion-theme .right-box {
-    #languageInfo {
-      font-size: 20px;
-    }
     background: rgba(248, 222, 60, 0.7);
+}
+
+body.minion-theme #languageInfo {
+    font-size: 20px;
 }
 
 body.minion-theme h1 {
